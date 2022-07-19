@@ -1,0 +1,12 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+body{
+    background-image: linear-gradient(to bottom, #caded9, #d1e2da, #d9e5db, #e1e9dc, #e9ecdf);
+    height: 100vh;
+}
+
