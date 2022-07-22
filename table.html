@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal information</title>
-    <link rel="stylesheet" href="styleTable.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styleTable.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <section>
-        <table>
-            <h1>Agent List (08)</h1>
-            <h5>Your most recent Agent</h5>
-            <select name="" id="">Filter</select>
-            
-            <tr>
-                <th>Name</th>
-                <th>Last name</th>
-                <th>Phone</th>
-                <th>Email</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
+      <h1>Agent List (08)</h1>
+      <select name="" id="">
+        <option selected>Filters</option>
+      </select>
+      <input type="search"  placeholder="Search what you want">
+      <h5 id="description">Your most recent Agent</h5>
+
+      <table class="show">
+        <thead>
+          <tr class="required-data">
+            <th>name</th>
+            <th>last name</th>
+            <th>Phone</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="data">
+            <td>Lina Paola</td>
+            <td>Espinosa Zambrano</td>
+            <td>3043771921</td>
+            <td>linp@gmail.com</td>
+          </tr>
+
+          <tr></tr>
+        </tbody>
+      </table>
     </section>
-</body>
+  </body>
+  <script src="form.js"></script>
 </html>

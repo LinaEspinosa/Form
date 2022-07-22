@@ -1,37 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet"> 
-</head>
-<body>
-    <section class="login">
-        <picture class="camera">
-            <img src="/images/silueta-de-camara-png-7.png" alt="" width="40px" height=40px">
-        </picture>
-        <form action="">
-            <h3>Register Account</h3>
-            
-            <input class="placeIcon"type="text" id="name"  placeholder="&#xf007; Your name">
-            <input class="placeIcon"type="text" id="lastName" placeholder="&#xf0e0; Last name">
-            <input class="placeIcon"type="text" id="phone" placeholder="&#xf095;  Phone">
-            <input class="placeIcon"type="text" id="email" placeholder=" &#xf0e0; Email">
-            <input class="submit" placeholder="Register">
-            
-        </form>
-        <footer>
-        <strong>designed by freepik</strong> 
-        </footer>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="form-container">
+      <picture class="camera">
+        <img src="/images/silueta-de-camara-png-7.png" alt="" width="40px"
+        height=40px">
+      </picture>
+      <form class="form">
+        <h3>Register Account</h3>
+        <div class="input-icons">
+          
+        </div>
+        <input class="fontAwesome"
+          type="text"
+          id="name"
+          placeholder="&#xf007; Name" value=""
+          required
+        />
         
+        <input class="fontAwesome"
+        type="text"
+        id="lastName"
+        placeholder="&#xf007; Last name"
+        required
+        />
+        
+        <input class="fontAwesome"
+        type="text"
+        id="phone"
+        placeholder="&#xf095; Phone"
+        required
+        />
+        
+        <input class="fontAwesome"
+          type="text"
+          id="email"
+          placeholder="&#xf2b6; Email"
+          required
+        />
+        <input
+          class="submit"
+          type="submit"
+          value="Register"
+          onclick="addRow()"
+        />
+      </form>
+      <footer>
+        <h5>designed by freepik</h5>
+      </footer>
     </section>
-</body>
+  </body>
+  <script src="form.js"></script>
 </html>
